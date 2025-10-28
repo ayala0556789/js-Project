@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        color: burlywood;
+    }
+
+    p {
+        color: brown;
+    }
+
+    img {
+        height: 400px;
+    }
+    section{
+        border: 3px, brown, solid;
+        width: 30vw;
+        height: 80vh;
+        background-color: oldlace;
+        border-radius: 10px;
+    }
+</style>
+
+<body onload="d()">
+    <section></section>
+    <div id="add" hidden>
+        <h1 class="add" hidden>!המוצר נוסף בהצלחה</h1>
+        <button class="add but" hidden onclick="addAlert()">מעבר לסל</button>
+    </div>
+    <script src="../js/details.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+
+</html>

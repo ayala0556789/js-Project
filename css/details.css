@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    border: 3px,black,solid;
+}
+
+img:hover{
+    transform: scale(1.07);
+}

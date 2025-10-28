@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body onload="products(sessionStorage.getItem('type'))">
+  <h1 id="hello"></h1>
+  <header>
+    <a class="a" href="../html/settings.html"><b>הגדרות אישיות</b></a>
+    <a class="a" href="../html/basket.html"><b>סל</b></a>
+    <a class="a" href="../html/signUp.html"><b>הרשמה</b></a>
+    <a class="a" href="../html/logIn.html"><b>כניסה</b></a>
+    <a class="a" href="../html/home.html"><b>דף הבית</b></a>
+  </header>
+  <section></section>
+  <div id="add" hidden>
+    <h1 class="add" hidden>המוצר נוסף בהצלחה!</h1>
+    <button class="add but" hidden onclick="addAlert()">מעבר לסל</button>
+  </div>
+  <script src="../js/product.js"></script>
+  <script src="../js/object.js"></script>
+</body>
+
+</html>

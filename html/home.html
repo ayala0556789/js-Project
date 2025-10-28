@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <title>Document</title>
+</head>
+
+<body onload="f()">
+<h1 id="hello"></h1>
+  <header>
+    <div id="h">
+      <section class="s"><a  class="a" href="../html/settings.html"><b>הגדרות אישיות</b></a></section>
+      <section class="s"><a class="a" href="../html/basket.html"><b>סל</b></a></section>
+      <section class="s"><a class="a" href="../html/signUp.html"><b>הרשמה</b></a></section>
+      <section class="s"><a class="a" href="../html/logIn.html"><b>כניסה</b></a></section>
+      <!-- <section class="s"><a class="a" href="../html/home.html"><b>דף הבית</b></a></section> -->
+      <section class="s"><b class="a" >חנות</b>
+        <ul>
+          <li><a class="a" href="../html/Productt.html" onclick="saveType()">הכל</a></li>
+          <li><a class="a" href="../html/Productt.html" onclick="saveType()">גלידות</a></li>
+          <li><a class="a" href="../html/Productt.html" onclick="saveType()">ארטיקים</a></li>
+          <li><a class="a" href="../html/Productt.html" onclick="saveType()">שייקים</a></li>
+          <li><a class="a" href="../html/Productt.html" onclick="saveType()">אחר</a></li>
+        </ul>
+      </section>
+    </div>
+  </header>
+
+
+  <!-- =======================ריבוע תמונות מתחלפות=================== -->
+  <div class="slider-container">
+    <div class="content">
+      <div class="color-overlay"></div>
+      <div class="product-name">
+        <span class="word-part first-word">Chai</span>
+        <span class="word-part second-word">Vanilla</span>
+      </div>
+      <img class="milkshake-image" src="../pic/milkshake_banana.png" alt="Milkshake">
+      <div class="nutrition-panel">
+        <div class="nutrition-item">
+          <div class="nutrition-value">20g</div>
+          <div class="nutrition-label">Plnt Protein</div>
+        </div>
+        <div class="nutrition-item">
+          <div class="nutrition-value">13g</div>
+          <div class="nutrition-label">Of Fiber</div>
+        </div>
+        <div class="nutrition-item">
+          <div class="nutrition-value">15</div>
+          <div class="nutrition-label">Vitamins</div>
+        </div>
+        <div class="nutrition-item">
+          <div class="nutrition-value">1.8g</div>
+          <div class="nutrition-label">Omega-3</div>
+        </div>
+        <div class="nutrition-item">
+          <div class="nutrition-value">1B</div>
+          <div class="nutrition-label">CFU Probiotics</div>
+        </div>
+      </div>
+    </div>
+<!-- =========================================== -->
+
+
+    <div class="controls">
+      <div class="control-dot active" data-index="0"></div>
+      <div class="control-dot" data-index="1"></div>
+      <div class="control-dot" data-index="2"></div>
+      <div class="control-dot" data-index="3"></div>
+    </div>
+  </div>
+
+  <script src="../js/home.js"></script>
+  <script src="../js/object.js"></script>
+</body>
+
+</html>

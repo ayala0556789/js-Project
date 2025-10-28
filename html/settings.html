@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="../css/settings.css">
+</head>
+
+<body onload="f()">
+    <!-- <h1 id="hello"></h1> -->
+    <div id="clrs">
+    <label for="colortext" class="a">בחר צבע טקסט</label><br><br>
+    <input type="color" id="colortext" onblur="setTextColor()"><br><br><br>
+
+    <label for="colortext" class="a">בחר צבע רקע</label><br><br>
+    <input type="color" id="colortext" onblur="setBackColor()"><br><br><br>
+    </div>
+    <div id="imgs">
+        <h1>בחר תמונת רקע</h1><br><br>
+        <img src="../pic/ציור.png" onclick="setBackImg()">
+        <img src="../pic/4 גלידות.jpg" onclick="setBackImg()">
+        <img src="../pic/חמוד.webp" onclick="setBackImg()">
+        <img src="../pic/לגזור גלידות.jpg" onclick="setBackImg()">
+        <img src="../pic/לוגו מוכן.png" onclick="setBackImg()">
+        <img src="../pic/לוגו2.jpg" onclick="setBackImg()">
+        <img src="../pic/אחלה חנות.png" onclick="setBackImg()">
+        <img src="../pic/nice.png" onclick="setBackImg()">
+        <img src="../pic/bbbb.jpg" onclick="setBackImg()">
+        <img src="../pic/רקעמגנום.webp" onclick="setBackImg()">
+    </div>
+
+    <aside>
+        <div id="h">
+      <section class="s"><a class="a" href="../html/basket.html"><b>סל</b></a></section><br>
+      <section class="s"><a class="a" href="../html/signUp.html"><b>הרשמה</b></a></section><br>
+      <section class="s"><a class="a" href="../html/logIn.html"><b>כניסה</b></a></section><br>
+      <section class="s"><a class="a" href="../html/home.html"><b>דף הבית</b></a></section><br>
+      <section class="s" id="store"><b class="a"><u>חנות</u></b><br>
+        <il>
+          <li><a class="a" href="../html/Productt.html" onclick="saveType()">הכל</a></li>
+          <li><a class="a" href="../html/Productt.html" onclick="saveType()">גלידות</a></li>
+          <li><a class="a" href="../html/Productt.html" onclick="saveType()">ארטיקים</a></li>
+          <li><a class="a" href="../html/Productt.html" onclick="saveType()">שייקים</a></li>
+          <li><a class="a" href="../html/Productt.html" onclick="saveType()">אחר</a></li>
+        </il>
+      </section>
+    </div>
+    </aside>
+    <script src="../js/object.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+
+</html>

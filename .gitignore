@@ -1,0 +1,44 @@
+# Compiled output
+/dist
+/build
+/out
+
+# Node.js dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# IDE and editor files (e.g., VS Code, WebStorm)
+.vscode/
+.idea/
+*.sublime-workspace
+*.DS_Store # macOS specific
+Thumbs.db # Windows specific
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Optional npm cache directory
+.npm/
+
+# TypeScript generated files (if applicable)
+*.js
+*.d.ts
+!src/**/*.js # If you have source .js files you want to keep
+!src/**/*.d.ts # If you have source .d.ts files you want to keep
+
+# Grunt intermediate storage
+.grunt/
+
+# Bower dependency directory
+bower_components/

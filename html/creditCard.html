@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/pay.css">
+
+</head>
+
+<body onload="start()">
+<div id="hello"></div>
+<br>
+<br>
+<div id="price"></div>
+
+    <div class='container'>
+        <div class="heading">Card
+            <hr>
+        </div>
+    
+        <div class="card">
+            <div class="card-no card-item">
+                <label for="card-no">Card Number :</label>
+                <input type="text" id="card-no" pattern="\d{16}" maxlength="25" minlength="25"
+                    placeholder="0000    -    0000    -    0000    -    0000" oninput="formatInputCardNo(event)"
+                    required>
+            </div>
+    
+            <div class="date d-flex card-item">
+                <div class="start-date d-flex">
+                    <label for="start-date" class="d-flex " id="start-date-lable">
+                        <div class="p10 d-flex f-direction-c"> <span>Valid</span><span>From </span> </div> :
+                    </label>
+                    <input type="text" placeholder="MM/YY" id="start-date" maxlength="5"
+                        oninput="formatInputValidity(event)" required>
+                </div>
+                <div class="exp-date d-flex">
+                    <label for="exp-date" class="d-flex">
+                        <div class="p10 d-flex f-direction-c"> <span>Valid</span><span>Till </span> </div> :
+                    </label>
+                    <input type="text" placeholder="MM/YY" id="exp-date" maxlength="5"
+                        oninput="formatInputValidity(event)" required>
+                </div>
+            </div>
+    
+            <div class="vss-no card-item">
+                <label for="card-no">VSS / CVV Number :</label>
+                <input type="password" id="cvv-no" pattern="\d" maxlength="3" placeholder="000"
+                    oninput="formatInputCVV(event)" required>
+            </div>
+    
+            <div class="card-name card-item">
+                <label for="name">Your Name :</label>
+                <input type="text" name="name" id="name" placeholder="VIKRAM DILIP DHOLE" required>
+            </div>
+            <div class="submit-btn d-flex jc-center">
+                <button type="submit" role="button" onclick="submit()" id="sbm-btn">ADD</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/pay.js"></script>
+</body>
+</html>
